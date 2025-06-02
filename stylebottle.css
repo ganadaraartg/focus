@@ -1,0 +1,138 @@
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 32px;
+    font-weight: bolder;
+    
+    height:80px;
+    line-height:86px;
+    text-align: center;
+  }
+    
+  .after {
+  content: "";
+  display: block;
+  width: 200%;
+  height: 3px;
+  background-color: #000;
+  position: block;
+  transform: translate(-50%, -50%);
+  }
+
+  .container {
+    width:100%;
+    display: block;
+    height: calc(100vh - 60px);
+  }
+  .center-panel {
+    width: 40%;
+    display: block;
+    height:1080px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    margin:0 auto;
+  }
+
+  .tab {
+    height:1080px;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    background: linear-gradient(180deg, #000 0, #000 12px, #fff 12px, #fff 100%);
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .black-button {
+    display: inline-block;
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .black-button:hover {
+    background-color: #4b4b4b; /* 마우스 오버 시 색상 변경 */
+  }
+
+  #myChart {
+    width: 800px;
+    height: 400px;
+  }
+  
+  /*---------------------------------------------------------------*/
+
+  @media screen and (max-width: 1000px) {
+  *,
+  *::before,
+  *::after {
+  box-sizing: border-box;
+  }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+    .after {
+      content: "";
+      display: block;
+      width: 200%;
+      height: 3px;
+      background-color: #000;
+      position: block;
+      transform: translate(-50%, -50%);
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+    }
+  
+    .center-panel {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    header {
+      line-height: 80px;
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .tab {
+      width: 90%;
+      margin: 0 auto;
+      padding: 15px;
+    }
+  
+    .black-button {
+      width: 90%;
+      margin: 10px auto;
+      padding: 12px;
+      font-size: 16px;
+    }
+  
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100%;
+      display: block;
+    }
+  }
